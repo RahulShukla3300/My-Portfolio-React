@@ -1,16 +1,67 @@
-# React + Vite
+# Rahul Shukla Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Vite to showcase my skills, projects, and experience as a software developer.
 
-Currently, two official plugins are available:
+> 🚧 **Version 1 is currently under development.** More improvements and features will be added in Version 2.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+This portfolio introduces me, highlights my technical skills, presents my projects, and provides a way for visitors to contact me.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Home and introduction section
+- About section
+- Skills showcase
+- Reusable project cards
+- Contact section
+- Footer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- JavaScript
+- CSS
+- Vite
+
+## Run Locally
+
+### Clone the repository
+
+```bash
+git clone https://github.com/RahulShukla3300/My-Portfolio-React.git
+```
+
+### Go to the project directory
+
+```bash
+cd My-Portfolio-React
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the `dist` folder.
+
+## Project Status
+
+Version 1 is under development. The live demo link and portfolio screenshot will be added after deployment.
+
+## Author
+
+[Rahul Shukla](https://github.com/RahulShukla3300)
