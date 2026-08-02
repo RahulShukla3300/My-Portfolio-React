@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+
+
+.hero h1 {
+font-size: 60px;
+margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px auto;
+}
+
+
+
+
+#projects {
+  min-height: 80vh;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.project-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#about {
+  min-height: 80vh;
+  padding: 100px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#about h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#skills {
+  min-height: 80vh;
+  padding: 100px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#skills h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.skill {
+  padding: 15px 25px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.skill:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.project-card {
+  width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  background-color: #e8e8e8;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
