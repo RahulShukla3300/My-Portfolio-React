@@ -2,7 +2,11 @@
 
 A personal portfolio website built with React and Vite to showcase my skills, projects, and experience as a software developer.
 
-> 🚧 **Version 1 is currently under development.** More improvements and features will be added in Version 2.
+> 🚀 **Version 1 is live.** More improvements and features will be added in Version 2.
+
+## Live Demo
+
+🌐 [View the live portfolio](https://rahulshuklaportfolio.vercel.app)
 
 ## About
 
@@ -60,7 +64,7 @@ The production-ready files will be generated in the `dist` folder.
 
 ## Project Status
 
-Version 1 is under development. The live demo link and portfolio screenshot will be added after deployment.
+Version 1 is deployed on Vercel. Further improvements and features will be added in Version 2.
 
 ## Author
 
