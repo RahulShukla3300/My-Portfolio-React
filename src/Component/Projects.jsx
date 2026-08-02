@@ -1,3 +1,6 @@
+import ProjectCard from "./ProjectCard";
+
+
 function Projects() {
   return (
     <section id="projects">
@@ -9,30 +12,26 @@ function Projects() {
       </p>
 
       <div className="projects-container">
-        <div className="project-card">
-          <h3>Guess the Number Game</h3>
+        <ProjectCard
+          title="Guess the Number Game"
+          description="A JavaScript game where the user tries to guess a randomly generated number within a limited number of attempts."
+          tech1="HTML"
+          tech2="CSS"
+          tech3="JavaScript"
+          liveDemo="#"
+          github="#"
+        />
 
-          <p>
-            A JavaScript game where the user tries to guess a randomly
-            generated number within a limited number of attempts.
-          </p>
-
-          <div className="project-tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-
-          <div className="project-links">
-            <a href="#" target="_blank" rel="noreferrer">
-              Live Demo
-            </a>
-
-            <a href="#" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
-        </div>
+        <ProjectCard
+        title="Bubble Game"
+          description="A fun JavaScript game where players pop numbered bubbles before time runs out to score as many points as possible."
+          tech1="HTML"
+          tech2="CSS"
+          tech3="JavaScript"
+          liveDemo="#"
+          github="#"
+        />
+        
       </div>
     </section>
   )
