@@ -1,5 +1,8 @@
 import ProjectCard from "./ProjectCard";
 
+import GuessNumberImg from "../assets/Projects/GuessTheNum.png"
+import bubbleImg from "../assets/Projects/bubble.png"
+
 
 function Projects() {
   return (
@@ -13,23 +16,25 @@ function Projects() {
 
       <div className="projects-container">
         <ProjectCard
+          image = {GuessNumberImg}
           title="Guess the Number Game"
           description="A JavaScript game where the user tries to guess a randomly generated number within a limited number of attempts."
           tech1="HTML"
           tech2="CSS"
           tech3="JavaScript"
-          liveDemo="#"
-          github="#"
+          liveDemo="https://rahulshukla3300.github.io/Learn-JavaScript-Practice-Project/Guess-The-Number/"
+          github="https://github.com/RahulShukla3300/Learn-JavaScript-Practice-Project"
         />
 
         <ProjectCard
-        title="Bubble Game"
+          image = {bubbleImg}
+          title="Bubble Game"
           description="A fun JavaScript game where players pop numbered bubbles before time runs out to score as many points as possible."
           tech1="HTML"
           tech2="CSS"
           tech3="JavaScript"
           liveDemo="#"
-          github="#"
+          github="https://github.com/RahulShukla3300/Learn-JavaScript-Practice-Project/tree/main/Bubble%20Game"
         />
         
       </div>
