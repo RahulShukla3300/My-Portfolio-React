@@ -2,7 +2,7 @@
 
 A personal portfolio website built with React and Vite to showcase my skills, projects, and experience as a software developer.
 
-> 🚀 **Version 1 is live.** More improvements and features will be added in Version 2.
+> 🚀 **Version 1 is complete and deployed on Vercel.** I am continuing to improve the design, responsiveness, and project sections.
 
 ## Live Demo
 
@@ -10,7 +10,7 @@ A personal portfolio website built with React and Vite to showcase my skills, pr
 
 ## About
 
-This portfolio introduces me, highlights my technical skills, presents my projects, and provides a way for visitors to contact me.
+This portfolio introduces me, highlights my technical skills, presents selected projects, and provides a way for visitors to contact me.
 
 ## Features
 
@@ -64,7 +64,7 @@ The production-ready files will be generated in the `dist` folder.
 
 ## Project Status
 
-Version 1 is deployed on Vercel. Further improvements and features will be added in Version 2.
+Version 1 is complete and deployed on Vercel. Future updates will focus on improving responsiveness, polishing the visual design, and adding stronger project details.
 
 ## Author
 
