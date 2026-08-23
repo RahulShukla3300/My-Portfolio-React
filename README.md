@@ -2,7 +2,7 @@
 
 A personal portfolio website built with React and Vite to showcase my skills, projects, and experience as a software developer.
 
-> 🚧 **Version 4 is currently in development.** This branch focuses on fixing links and layout issues, improving accessibility and responsiveness, and creating a more polished portfolio experience.
+> 🚧 **Version 5 is currently in development.** It builds on the completed and deployed Version 4 with further visual and feature improvements.
 
 ## Live Demo
 
@@ -64,7 +64,7 @@ The production-ready files will be generated in the `dist` folder.
 
 ## Project Status
 
-Version 4 is currently being developed on the `version-4` branch. The production website will be updated after Version 4 is tested and merged into `main`.
+Version 4 has been tested, merged into `main`, and deployed to Vercel. Version 5 is now in development.
 
 ## Author
 
