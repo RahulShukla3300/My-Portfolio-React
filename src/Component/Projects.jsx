@@ -22,7 +22,7 @@ function Projects() {
           tech1="HTML"
           tech2="CSS"
           tech3="JavaScript"
-          liveDemo="https://rahulshukla3300.github.io/Learn-JavaScript-Practice-Project/Guess-The-Number/"
+          liveDemo="https://rahulshukla3300.github.io/Learn-JavaScript-Practice-Project/Guess%20The%20Num/"
           github="https://github.com/RahulShukla3300/Learn-JavaScript-Practice-Project"
         />
 
@@ -34,7 +34,7 @@ function Projects() {
           tech2="CSS"
           tech3="JavaScript"
           liveDemo="#"
-          github="https://github.com/RahulShukla3300/Learn-JavaScript-Practice-Project/tree/main/Bubble%20Game"
+          liveDemo="https://rahulshukla3300.github.io/Learn-JavaScript-Practice-Project/Bubble%20Game/"
         />
         
       </div>

@@ -46,6 +46,12 @@ body {
 
 .logo {
   margin: 0;
+
+  color: var(--text-color);
+
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -310,6 +316,18 @@ body {
   color: white;
 }
 
+.disabled-button {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.disabled-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: none;
+  transform: none;
+}
+
 .hero-socials {
   display: flex;
   gap: 20px;
@@ -412,9 +430,7 @@ body {
 /* About Section */
 
 #about {
-  min-height: 80vh;
-
-  padding: 100px;
+  padding: 100px 50px;
 
   text-align: center;
 
@@ -440,8 +456,6 @@ body {
 /* Skills Section */
 
 #skills {
-  min-height: 80vh;
-
   padding: 100px 50px;
 
   text-align: center;
@@ -495,13 +509,27 @@ body {
 /* Projects Section */
 
 #projects {
-  min-height: 80vh;
 
   padding: 80px 50px;
 
   text-align: center;
 
   box-sizing: border-box;
+}
+
+#project h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#project > p {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: var(--text-light);
+
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .projects-container {
@@ -619,8 +647,6 @@ body {
 /* Contact Section */
 
 #contact {
-  min-height: 70vh;
-
   padding: 100px 50px;
 
   text-align: center;
@@ -797,9 +823,17 @@ body {
   .nav-links {
     justify-content: center;
 
-    gap: 12px;
+    gap: 8px;
 
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+
+    min-height: 44px;
+    padding: 0 4px;
   }
 
   .hero {
@@ -850,6 +884,7 @@ body {
 
   #about h2,
   #skills h2,
+  #projects h2,
   #contact h2 {
     font-size: 34px;
   }

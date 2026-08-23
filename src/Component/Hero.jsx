@@ -36,10 +36,18 @@ function Hero() {
             View Projects
           </a>
 
-          <a href="#"className="secondary-button" onClick={(event) => 
+
+          <span
+          className="secondary-button disabled-button"
+          aria-disabled="true">
+                  Resume Coming Soon
+          </span>
+
+          {/* <a href="#"className="secondary-button"
+            onClick={(event) =>
             event.preventDefault()}>
             Resume Coming Soon
-            </a>
+            </a> */}
         </div>
 
         <div className="hero-socials">
