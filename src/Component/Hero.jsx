@@ -1,4 +1,4 @@
-import profilePhoto from "../assets/profile/profilephoto.png"
+import profilePhoto from "../assets/profile/profilephoto.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
@@ -13,22 +13,20 @@ function Hero() {
       <div className="hero-shape hero-shape-2"></div>
       <div className="hero-shape hero-shape-3"></div>
 
-
-
       <div className="hero-content">
         <p className="hero-greeting">Hello, I'm</p>
 
         <h1>
           <span className="gradient-text">Rahul </span>
-            <span className="dark-text">Shukla</span>
+          <span className="dark-text">Shukla</span>
         </h1>
 
         <h2>Software Developer</h2>
 
         <p className="hero-description">
-          Passionate Full Stack Developer building modern,
-          responsive, and scalable web applications using
-          React, JavaScript, Node.js, PHP, and PostgreSQL.
+          Passionate Full Stack Developer building modern, responsive, and
+          scalable web applications using React, JavaScript, Node.js, PHP, and
+          PostgreSQL.
         </p>
 
         <div className="hero-actions">
@@ -36,18 +34,12 @@ function Hero() {
             View Projects
           </a>
 
-
           <span
-          className="secondary-button disabled-button"
-          aria-disabled="true">
-                  Resume Coming Soon
-          </span>
-
-          {/* <a href="#"className="secondary-button"
-            onClick={(event) =>
-            event.preventDefault()}>
+            className="secondary-button disabled-button"
+            aria-disabled="true"
+          >
             Resume Coming Soon
-            </a> */}
+          </span>
         </div>
 
         <div className="hero-socials">
@@ -81,7 +73,7 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

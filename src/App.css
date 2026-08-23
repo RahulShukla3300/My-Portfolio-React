@@ -517,12 +517,12 @@ body {
   box-sizing: border-box;
 }
 
-#project h2 {
+#projects h2 {
   margin-bottom: 20px;
   font-size: 40px;
 }
 
-#project > p {
+#projects > p {
   max-width: 650px;
   margin: 0 auto;
 
