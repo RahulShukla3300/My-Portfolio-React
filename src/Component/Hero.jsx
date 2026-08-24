@@ -9,6 +9,9 @@ function Hero() {
       <div className="hero-blob blob-3"></div>
       <div className="hero-blob blob-4"></div>
 
+      <div className="dot-pattern dots-right"></div>
+      <div className="dot-pattern dots-left"></div>
+
       <div className="hero-shape hero-shape-1"></div>
       <div className="hero-shape hero-shape-2"></div>
       <div className="hero-shape hero-shape-3"></div>
@@ -72,6 +75,22 @@ function Hero() {
           />
         </div>
       </div>
+
+      <div className="scroll-indicator">
+        <span>Scroll Down</span>
+        <div className="scroll-arrow">↓</div>
+      </div>
+
+      <div className="hero-wave">
+   <svg
+    viewBox="0 0 1440 120"
+    preserveAspectRatio="none" >
+    <path
+      d="M0,64L60,74.7C120,85,240,107,360,106.7C480,107,600,85,720,80C840,75,960,85,1080,90.7C1200,96,1320,96,1380,96L1440,96L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+    />
+  </svg>
+</div>
+
     </section>
   );
 }
