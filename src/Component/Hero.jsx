@@ -1,98 +1,123 @@
-import profilePhoto from "../assets/profile/profilephoto.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profilePhoto from "../assets/profile/profilephoto.png"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import {
+  FiArrowUpRight,
+  FiBriefcase,
+  FiCode,
+  FiDownload,
+  FiMail,
+} from "react-icons/fi"
 
 function Hero() {
   return (
-    <section id="home" className="hero">
-      <div className="hero-blob blob-1"></div>
-      <div className="hero-blob blob-2"></div>
-      <div className="hero-blob blob-3"></div>
-      <div className="hero-blob blob-4"></div>
+    <section id="home" className="hero redesigned-hero">
+      <div className="hero-backdrop" aria-hidden="true"></div>
 
-      <div className="dot-pattern dots-right"></div>
-      <div className="dot-pattern dots-left"></div>
+      <div className="hero-inner page-shell">
+        <div className="hero-content">
+          <div className="availability-badge">
+            <span className="availability-dot" aria-hidden="true"></span>
+            Available for new opportunities
+          </div>
 
-      <div className="hero-shape hero-shape-1"></div>
-      <div className="hero-shape hero-shape-2"></div>
-      <div className="hero-shape hero-shape-3"></div>
+          <h1>Hello, I’m Rahul Shukla</h1>
 
-      <div className="hero-content">
-        <p className="hero-greeting">Hello, I'm</p>
+          <p className="hero-role">
+            Full Stack Software Developer
+          </p>
 
-        <h1>
-          <span className="gradient-text">Rahul </span>
-          <span className="dark-text">Shukla</span>
-        </h1>
+          <p className="hero-description">
+            I build reliable web products—from polished interfaces to
+            scalable backends—with React, JavaScript, Node.js, PHP,
+            and PostgreSQL.
+          </p>
 
-        <h2>Software Developer</h2>
+          <div className="hero-actions">
+            <a href="#projects" className="redesign-button primary-action">
+              View My Work
+              <FiArrowUpRight aria-hidden="true" />
+            </a>
 
-        <p className="hero-description">
-          Passionate Full Stack Developer building modern, responsive, and
-          scalable web applications using React, JavaScript, Node.js, PHP, and
-          PostgreSQL.
-        </p>
+            <span
+              className="redesign-button secondary-action disabled-action"
+              aria-disabled="true"
+            >
+              <FiDownload aria-hidden="true" />
+              Resume Coming Soon
+            </span>
+          </div>
 
-        <div className="hero-actions">
-          <a href="#projects" className="primary-button">
-            View Projects
-          </a>
+          <div className="hero-socials" aria-label="Social profiles">
+            <a
+              href="https://www.linkedin.com/in/rahul-shuklacse"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Rahul Shukla on LinkedIn"
+            >
+              <FaLinkedinIn aria-hidden="true" />
+            </a>
 
-          <span
-            className="secondary-button disabled-button"
-            aria-disabled="true"
-          >
-            Resume Coming Soon
-          </span>
+            <a
+              href="https://github.com/RahulShukla3300"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Rahul Shukla on GitHub"
+            >
+              <FaGithub aria-hidden="true" />
+            </a>
+
+            <a
+              href="mailto:rahul.shukla3300@gmail.com"
+              aria-label="Email Rahul Shukla"
+            >
+              <FiMail aria-hidden="true" />
+            </a>
+
+            <span
+              className="hero-stack-icon"
+              aria-label="Full stack developer"
+            >
+              <FiCode aria-hidden="true" />
+            </span>
+          </div>
         </div>
 
-        <div className="hero-socials">
-          <a
-            href="https://github.com/RahulShukla3300"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub />
-            <span>GitHub</span>
-          </a>
+        <div className="hero-visual">
+          <div className="portrait-orbit" aria-hidden="true"></div>
 
-          <a
-            href="https://www.linkedin.com/in/rahul-shuklacse"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-            <span>LinkedIn</span>
-          </a>
+          <div className="profile-image-wrapper">
+            <img
+              src={profilePhoto}
+              alt="Rahul Shukla"
+              className="profile-image"
+            />
+          </div>
+
+          <div className="floating-card experience-card">
+            <span className="floating-card-icon">
+              <FiBriefcase aria-hidden="true" />
+            </span>
+
+            <span>
+              <strong>2+</strong>
+              <small>Years Experience</small>
+            </span>
+          </div>
+
+          <div className="floating-card developer-card">
+            <span className="floating-card-icon">
+              <FiCode aria-hidden="true" />
+            </span>
+
+            <span>
+              <strong>Full Stack</strong>
+              <small>Developer</small>
+            </span>
+          </div>
         </div>
       </div>
-
-      <div className="hero-visual">
-        <div className="profile-image-wrapper">
-          <img
-            src={profilePhoto}
-            alt="Rahul Shukla"
-            className="profile-image"
-          />
-        </div>
-      </div>
-
-      <div className="scroll-indicator">
-        <span>Scroll Down</span>
-        <div className="scroll-arrow">↓</div>
-      </div>
-
-      <div className="hero-wave">
-   <svg
-    viewBox="0 0 1440 120"
-    preserveAspectRatio="none" >
-    <path
-      d="M0,64L60,74.7C120,85,240,107,360,106.7C480,107,600,85,720,80C840,75,960,85,1080,90.7C1200,96,1320,96,1380,96L1440,96L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
-    />
-  </svg>
-</div>
-
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

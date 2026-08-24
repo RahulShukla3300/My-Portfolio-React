@@ -1,33 +1,58 @@
-function ProjectCard(props) {
-  return (
-    <div className="project-card">
+import { FaGithub } from "react-icons/fa"
+import { FiExternalLink } from "react-icons/fi"
 
-       <img
-       src={props.image}
-        alt={props.title}
+function ProjectCard({
+  image,
+  title,
+  category,
+  description,
+  technologies,
+  highlights,
+  liveDemo,
+  github,
+}) {
+  return (
+    <article className="project-card">
+      <div className="project-image-wrapper">
+        <img
+          src={image}
+          alt={`${title} interface`}
           className="project-image"
         />
-
-      <h3>{props.title}</h3>
-
-      <p>{props.description}</p>
-
-      <div className="project-tech">
-        <span>{props.tech1}</span>
-        <span>{props.tech2}</span>
-        <span>{props.tech3}</span>
       </div>
 
-      <div className="project-links">
-        <a href={props.liveDemo} target="_blank" rel="noreferrer">
-          Live Demo
-        </a>
+      <div className="project-card-content">
+        <p className="project-category">{category}</p>
 
-        <a href={props.github} target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+        <h3>{title}</h3>
+
+        <p className="project-description">
+          {description}
+        </p>
+
+        <p className="project-highlights">
+          {highlights}
+        </p>
+
+        <div className="project-tech">
+          {technologies.map((technology) => (
+            <span key={technology}>{technology}</span>
+          ))}
+        </div>
+
+        <div className="project-links">
+          <a href={liveDemo} target="_blank" rel="noreferrer">
+            Live Demo
+            <FiExternalLink aria-hidden="true" />
+          </a>
+
+          <a href={github} target="_blank" rel="noreferrer">
+            <FaGithub aria-hidden="true" />
+            GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </article>
   )
 }
 

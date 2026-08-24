@@ -1,43 +1,62 @@
-import developerImage from "../assets/about/developer.svg";
+import {
+  FiCode,
+  FiMessageCircle,
+  FiTarget,
+} from "react-icons/fi"
+
+const strengths = [
+  {
+    icon: FiTarget,
+    title: "Problem Solver",
+    description: "I focus on practical solutions that address the real need.",
+  },
+  {
+    icon: FiCode,
+    title: "Clean Code",
+    description: "Readable and maintainable code that is easier to grow.",
+  },
+  {
+    icon: FiMessageCircle,
+    title: "Collaborative",
+    description: "Clear communication and a dependable team mindset.",
+  },
+]
 
 function About() {
   return (
-    <section id="about">
-      <h2>About Me</h2>
+    <section id="about" className="about-panel">
+      <p className="section-kicker">About me</p>
 
-      <div className="about-container">
-        <div className="about-image">
-          <img src={developerImage} alt="Developer Illustration" />
-        </div>
+      <h2>I write code that solves real problems.</h2>
 
-        <div className="about-content">
-          <h3>Full Stack Software Developer</h3>
+      <p className="section-copy">
+        I’m a full stack developer with over two years of professional
+        experience building responsive and dependable web applications.
+      </p>
 
-          <p>
-            I'm Rahul Shukla, a passionate Full Stack Developer with over 2
-            years of professional experience building responsive and scalable
-            web applications.
-          </p>
+      <p className="section-copy">
+        I enjoy turning ideas into useful products with thoughtful
+        interfaces, clear architecture, and steady attention to quality.
+      </p>
 
-          <p>
-            I enjoy solving real-world problems using modern technologies such
-            as React, JavaScript, Node.js, PHP, and PostgreSQL while
-            continuously improving my development skills.
-          </p>
+      <div className="strength-grid">
+        {strengths.map(
+          ({ icon: Icon, title, description }) => (
+            <div className="strength-item" key={title}>
+              <span className="strength-icon">
+                <Icon aria-hidden="true" />
+              </span>
 
-          <div className="about-highlights">
-            <div className="highlight-card">✓ 2+ Years Experience</div>
-
-            <div className="highlight-card">✓ Full Stack Development</div>
-
-            <div className="highlight-card">✓ React • Node.js • PHP</div>
-
-            <div className="highlight-card">✓ PostgreSQL & MySQL</div>
-          </div>
-        </div>
+              <div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </div>
+            </div>
+          )
+        )}
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

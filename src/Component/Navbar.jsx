@@ -1,20 +1,28 @@
 function Navbar() {
   return (
-    <nav className="navbar">
+    <header className="site-header">
+      <nav className="navbar page-shell" aria-label="Primary navigation">
+        <a
+          href="#home"
+          className="logo"
+          aria-label="Rahul Shukla — home"
+        >
+          <span className="logo-mark" aria-hidden="true">
+            RS
+          </span>
 
-      <a href="#home" className="logo">
-        Rahul Shukla
-      </a>
+          <span>Rahul Shukla</span>
+        </a>
 
-
-       <ul className="nav-links">
-            <li> <a href="#home">Home</a></li>
-            <li> <a href="#about">About</a></li>
-            <li> <a href="#skills">Skills</a></li>
-            <li> <a href="#projects">Projects</a></li>
-            <li> <a href="#contact">Contact</a></li>
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
   )
 }
 

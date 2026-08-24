@@ -1,41 +1,45 @@
+import { FaLinkedinIn } from "react-icons/fa"
+import { FiArrowRight, FiMail, FiSend } from "react-icons/fi"
+
 function Contact() {
   return (
-    <section id="contact">
-      <h2>Contact Me</h2>
+    <section id="contact" className="contact-section">
+      <div className="page-shell">
+        <div className="contact-banner">
+          <span className="contact-banner-icon">
+            <FiSend aria-hidden="true" />
+          </span>
 
-      <p>
-        I'm always open to discussing new opportunities,
-        collaborations, or freelance projects.
-      </p>
+          <div className="contact-banner-copy">
+            <h2>Let’s build something useful.</h2>
 
-      <div className="contact-container">
-
-        <div className="contact-item">
-          <h3>Email</h3>
-
-          <p>
-            <a href="mailto:rahul.shukla3300@gmail.com">rahul.shukla3300@gmail.com </a>
+            <p>
+              I’m available for full-time opportunities,
+              collaborations, and freelance projects.
             </p>
+          </div>
 
+          <div className="contact-actions">
+            <a
+              href="mailto:rahul.shukla3300@gmail.com"
+              className="contact-primary"
+            >
+              <FiMail aria-hidden="true" />
+              Get In Touch
+              <FiArrowRight aria-hidden="true" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rahul-shuklacse/"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-secondary"
+              aria-label="Contact Rahul Shukla on LinkedIn"
+            >
+              <FaLinkedinIn aria-hidden="true" />
+            </a>
+          </div>
         </div>
-
-        <div className="contact-item">
-          <h3>LinkedIn</h3>
-          <p>
-            <a href="https://www.linkedin.com/in/rahul-shuklacse/" target="_blank" rel="noreferrer">  LinkedIn Profile
-                </a>
-
-            </p>
-        </div>
-
-        <div className="contact-item">
-          <h3>GitHub</h3>
-          <p>
-            <a href="https://github.com/RahulShukla3300" target="_blank" rel="noreferrer">GitHub Profile</a>
-
-            </p>
-        </div>
-
       </div>
     </section>
   )
