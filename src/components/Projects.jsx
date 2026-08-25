@@ -1,3 +1,6 @@
+import { useCallback, useEffect, useRef } from "react"
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
+
 import ProjectCard from "./ProjectCard"
 
 import bubbleImage from "../assets/Projects/bubble.png"
@@ -131,6 +134,64 @@ const projects = [
 ]
 
 function Projects() {
+  const carouselRef = useRef(null)
+  const autoplayPausedRef = useRef(false)
+
+  const scrollProjects = useCallback((direction) => {
+    const carousel = carouselRef.current
+
+    if (!carousel) return
+
+    const firstCard = carousel.querySelector(".project-card")
+
+    if (!firstCard) return
+
+    const carouselStyles = window.getComputedStyle(carousel)
+    const gap = Number.parseFloat(carouselStyles.columnGap) || 0
+    const scrollStep = firstCard.getBoundingClientRect().width + gap
+    const maximumScroll = carousel.scrollWidth - carousel.clientWidth
+    const isAtStart = carousel.scrollLeft <= 2
+    const isAtEnd = carousel.scrollLeft >= maximumScroll - 2
+
+    if (direction > 0 && isAtEnd) {
+      carousel.scrollTo({ left: 0, behavior: "smooth" })
+      return
+    }
+
+    if (direction < 0 && isAtStart) {
+      carousel.scrollTo({ left: maximumScroll, behavior: "smooth" })
+      return
+    }
+
+    carousel.scrollBy({ left: direction * scrollStep, behavior: "smooth" })
+  }, [])
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches
+
+    if (prefersReducedMotion) return undefined
+
+    const autoplayTimer = window.setInterval(() => {
+      if (!autoplayPausedRef.current) scrollProjects(1)
+    }, 5000)
+
+    return () => window.clearInterval(autoplayTimer)
+  }, [scrollProjects])
+
+  const handleCarouselKeyDown = (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault()
+      scrollProjects(-1)
+    }
+
+    if (event.key === "ArrowRight") {
+      event.preventDefault()
+      scrollProjects(1)
+    }
+  }
+
   return (
     <section id="projects" className="selected-work">
       <div className="page-shell">
@@ -141,16 +202,65 @@ function Projects() {
           </div>
 
           <p>
-            Explore all ten meaningful projects currently published on my
-            GitHub account, from focused JavaScript exercises to this React
-            portfolio.
+            Explore ten meaningful projects from focused JavaScript exercises
+            to this React portfolio. The showcase advances automatically every
+            five seconds.
           </p>
         </div>
 
-        <div className="projects-container">
-          {projects.map((project) => (
-            <ProjectCard key={project.title} {...project} />
-          ))}
+        <div
+          className="projects-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="GitHub projects"
+          onMouseEnter={() => {
+            autoplayPausedRef.current = true
+          }}
+          onMouseLeave={() => {
+            autoplayPausedRef.current = false
+          }}
+          onFocus={() => {
+            autoplayPausedRef.current = true
+          }}
+          onBlur={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) {
+              autoplayPausedRef.current = false
+            }
+          }}
+        >
+          <div className="projects-carousel-toolbar">
+            <p>Browse all projects</p>
+
+            <div className="projects-carousel-controls">
+              <button
+                type="button"
+                onClick={() => scrollProjects(-1)}
+                aria-label="Show previous project"
+              >
+                <FiChevronLeft aria-hidden="true" />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => scrollProjects(1)}
+                aria-label="Show next project"
+              >
+                <FiChevronRight aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            ref={carouselRef}
+            className="projects-container"
+            tabIndex="0"
+            aria-label="Scrollable project list. Use left and right arrow keys to browse."
+            onKeyDown={handleCarouselKeyDown}
+          >
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

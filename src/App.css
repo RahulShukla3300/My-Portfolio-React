@@ -1182,18 +1182,91 @@
   line-height: 1.7;
 }
 
-.selected-work .projects-container {
+.projects-carousel {
+  position: relative;
+}
+
+.projects-carousel-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.projects-carousel-toolbar > p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.projects-carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.projects-carousel-controls button {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 50%;
+  background: white;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 21px;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.projects-carousel-controls button:hover {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.projects-carousel-controls button:focus-visible,
+.selected-work .projects-container:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.28);
+  outline-offset: 3px;
+}
+
+.selected-work .projects-container {
+  display: flex;
+  justify-content: flex-start;
   gap: 24px;
+  flex-wrap: nowrap;
   margin-top: 0;
+  padding: 2px 2px 24px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.selected-work .projects-container::-webkit-scrollbar {
+  display: none;
 }
 
 .selected-work .project-card {
   display: flex;
   width: auto;
+  max-width: none;
+  flex: 0 0 calc((100% - 48px) / 3);
   flex-direction: column;
+  margin: 0;
   overflow: hidden;
+  scroll-snap-align: start;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   background: white;
@@ -1667,8 +1740,8 @@
 /* 9. RESPONSIVE STYLES — CURRENT DESIGN */
 
 @media (max-width: 1100px) {
-  .selected-work .projects-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .selected-work .project-card {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -1788,14 +1861,8 @@
     max-width: 680px;
   }
 
-  .selected-work .projects-container {
-    grid-template-columns: 1fr;
-  }
-
   .selected-work .project-card {
-    width: 100%;
-    max-width: 620px;
-    margin-inline: auto;
+    flex-basis: 100%;
   }
 
   .contact-banner {
@@ -1909,6 +1976,10 @@
   .selected-work .project-links a,
   .selected-work .project-link-disabled {
     width: 100%;
+  }
+
+  .projects-carousel-toolbar {
+    align-items: flex-end;
   }
 
   .contact-banner {
