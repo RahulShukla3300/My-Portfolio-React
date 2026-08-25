@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard"
 
-import bubbleImage from "../assets/projects/bubble.png"
-import guessNumberImage from "../assets/projects/GuessTheNum.png"
+import bubbleImage from "../assets/Projects/bubble.png"
+import guessNumberImage from "../assets/Projects/GuessTheNum.png"
 
 const repositoryUrl =
   "https://github.com/RahulShukla3300/Learn-JavaScript-Practice-Project"
