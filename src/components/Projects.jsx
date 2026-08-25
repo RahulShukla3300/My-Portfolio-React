@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard"
 
-import GuessNumberImg from "../assets/Projects/GuessTheNum.png"
-import bubbleImg from "../assets/Projects/bubble.png"
+import bubbleImg from "../assets/projects/bubble.png"
+import GuessNumberImg from "../assets/projects/GuessTheNum.png"
 
 function Projects() {
   return (

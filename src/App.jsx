@@ -1,12 +1,12 @@
-import './App.css'
-import Navbar from './Component/Navbar'
-import Hero from './Component/Hero'
-import ExperienceStrip from './Component/ExperienceStrip'
-import About from './Component/About'
-import Skill from './Component/Skill'
-import Projects from './Component/Projects'
-import Contact from './Component/Contact'
-import Footer from './Component/Footer'
+import "./App.css"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import ExperienceStrip from "./components/ExperienceStrip"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -14,18 +14,19 @@ function App() {
       <Navbar />
 
       <main>
-       <Hero />
-       <ExperienceStrip />
-       <div className="about-skills-layout page-shell">
-        <About />
-        <Skill />
-       </div>
-       <Projects />
-       <Contact />
+        <Hero />
+        <ExperienceStrip />
+
+        <div className="about-skills-layout page-shell">
+          <About />
+          <Skills />
+        </div>
+
+        <Projects />
+        <Contact />
       </main>
 
       <Footer />
-
     </>
   )
 }

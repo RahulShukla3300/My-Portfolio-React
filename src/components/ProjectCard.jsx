@@ -18,6 +18,8 @@ function ProjectCard({
           src={image}
           alt={`${title} interface`}
           className="project-image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -26,13 +28,9 @@ function ProjectCard({
 
         <h3>{title}</h3>
 
-        <p className="project-description">
-          {description}
-        </p>
+        <p className="project-description">{description}</p>
 
-        <p className="project-highlights">
-          {highlights}
-        </p>
+        <p className="project-highlights">{highlights}</p>
 
         <div className="project-tech">
           {technologies.map((technology) => (

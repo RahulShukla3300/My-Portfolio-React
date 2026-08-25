@@ -22,9 +22,7 @@ function Hero() {
 
           <h1>Hello, I’m Rahul Shukla</h1>
 
-          <p className="hero-role">
-            Full Stack Software Developer
-          </p>
+          <p className="hero-role">Full Stack Software Developer</p>
 
           <p className="hero-description">
             I build reliable web products—from polished interfaces to
@@ -90,6 +88,7 @@ function Hero() {
               src={profilePhoto}
               alt="Rahul Shukla"
               className="profile-image"
+              fetchPriority="high"
             />
           </div>
 
