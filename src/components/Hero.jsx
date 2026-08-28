@@ -1,12 +1,12 @@
-import profilePhoto from "../assets/profile/profilephoto.png"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import profilePhoto from "../assets/profile/profilephoto.png";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {
   FiArrowUpRight,
   FiBriefcase,
   FiCode,
   FiDownload,
   FiMail,
-} from "react-icons/fi"
+} from "react-icons/fi";
 
 function Hero() {
   return (
@@ -25,9 +25,9 @@ function Hero() {
           <p className="hero-role">Frontend Developer</p>
 
           <p className="hero-description">
-            I build reliable web products from polished interfaces to
-             with React, JavaScript, Node.js, HTML, CSS, PHP
-            and PostgreSQL.
+            I build responsive and accessible web interfaces with React,
+            JavaScript, HTML, and CSS, focusing on performance and clean user
+            experiences.
           </p>
 
           <div className="hero-actions">
@@ -71,10 +71,7 @@ function Hero() {
               <FiMail aria-hidden="true" />
             </a>
 
-            <span
-              className="hero-stack-icon"
-              aria-label="Frontend developer"
-            >
+            <span className="hero-stack-icon" aria-label="Frontend developer">
               <FiCode aria-hidden="true" />
             </span>
           </div>
@@ -116,7 +113,7 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

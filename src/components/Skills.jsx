@@ -9,7 +9,6 @@ import {
 import {
   SiJavascript,
   SiMysql,
-  SiPostgresql,
 } from "react-icons/si"
 
 const skills = [
@@ -20,7 +19,6 @@ const skills = [
   { name: "Node.js", icon: FaNodeJs },
   { name: "PHP", icon: FaPhp },
   { name: "MySQL", icon: SiMysql },
-  { name: "PostgreSQL", icon: SiPostgresql },
 ]
 
 function Skills() {
