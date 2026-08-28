@@ -13,7 +13,7 @@ const highlights = [
   },
   {
     icon: FiCode,
-    value: "Full Stack",
+    value: "Frontend",
     label: "Frontend to backend",
   },
   {

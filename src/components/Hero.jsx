@@ -22,11 +22,11 @@ function Hero() {
 
           <h1>Hello, I’m Rahul Shukla</h1>
 
-          <p className="hero-role">Full Stack Software Developer</p>
+          <p className="hero-role">Frontend Developer</p>
 
           <p className="hero-description">
-            I build reliable web products—from polished interfaces to
-            scalable backends—with React, JavaScript, Node.js, PHP,
+            I build reliable web products from polished interfaces to
+             with React, JavaScript, Node.js, HTML, CSS, PHP
             and PostgreSQL.
           </p>
 
@@ -73,7 +73,7 @@ function Hero() {
 
             <span
               className="hero-stack-icon"
-              aria-label="Full stack developer"
+              aria-label="Frontend developer"
             >
               <FiCode aria-hidden="true" />
             </span>
@@ -109,7 +109,7 @@ function Hero() {
             </span>
 
             <span>
-              <strong>Full Stack</strong>
+              <strong>Frontend</strong>
               <small>Developer</small>
             </span>
           </div>
