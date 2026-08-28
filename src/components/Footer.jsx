@@ -16,7 +16,7 @@ function Footer() {
             <span>Rahul Shukla</span>
           </a>
 
-          <p>Full Stack Software Developer</p>
+          <p>Frontend Developer</p>
 
           <div className="footer-socials">
             <a
@@ -44,7 +44,7 @@ function Footer() {
               <FiMail aria-hidden="true" />
             </a>
 
-            <span aria-label="Full stack developer">
+            <span aria-label="Frontend developer">
               <FiCode aria-hidden="true" />
             </span>
           </div>

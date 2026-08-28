@@ -30,7 +30,7 @@ function About() {
       <h2>I write code that solves real problems.</h2>
 
       <p className="section-copy">
-        I’m a full stack developer with over two years of professional
+        I’m a frontend developer with over two years of professional
         experience building responsive and dependable web applications.
       </p>
 
