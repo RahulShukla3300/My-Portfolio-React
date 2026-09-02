@@ -1,5 +1,5 @@
-import { FaGithub } from "react-icons/fa"
-import { FiClock, FiCode, FiExternalLink } from "react-icons/fi"
+import { FaGithub } from "react-icons/fa";
+import { FiClock, FiCode, FiExternalLink } from "react-icons/fi";
 
 function ProjectCard({
   image,
@@ -12,7 +12,7 @@ function ProjectCard({
   github,
   status,
 }) {
-  const isInProgress = status === "In progress"
+  const isInProgress = status === "In progress";
 
   return (
     <article className="project-card">
@@ -33,9 +33,7 @@ function ProjectCard({
           </span>
         )}
 
-        <span
-          className={`project-status${isInProgress ? " is-progress" : ""}`}
-        >
+        <span className={`project-status${isInProgress ? " is-progress" : ""}`}>
           {status}
         </span>
       </div>
@@ -67,7 +65,7 @@ function ProjectCard({
           ) : (
             <span className="project-link-disabled">
               <FiClock aria-hidden="true" />
-              Demo pending
+              In-rogress
             </span>
           )}
 
@@ -83,7 +81,7 @@ function ProjectCard({
         </div>
       </div>
     </article>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;

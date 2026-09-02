@@ -1,8 +1,8 @@
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { FiCode, FiMail, FiMapPin } from "react-icons/fi"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FiCode, FiMail, FiMapPin } from "react-icons/fi";
 
 function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer id="footer" className="site-footer">
@@ -43,10 +43,6 @@ function Footer() {
             >
               <FiMail aria-hidden="true" />
             </a>
-
-            <span aria-label="Frontend developer">
-              <FiCode aria-hidden="true" />
-            </span>
           </div>
         </div>
 
@@ -94,7 +90,7 @@ function Footer() {
         <p>Built with React and attention to detail.</p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
