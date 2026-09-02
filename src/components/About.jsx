@@ -20,9 +20,9 @@ const strengths = [
     title: "A Journey of Discipline",
     description: [
       "🏆 UPSC CSE Prelims 2022",
-      "🎯 MPPSC Prelims — Cleared Twice",
-      "🌍 Global Environment Management — DTU",
-      "⭐ Star Performer of the Year 2025",
+      "🎯 MPPSC Prelims ",
+      "🌍 Global Environment Management-DTU",
+      "⭐ Star Performer ",
     ],
   },
 

@@ -70,10 +70,6 @@ function Hero() {
             >
               <FiMail aria-hidden="true" />
             </a>
-
-            <span className="hero-stack-icon" aria-label="Frontend developer">
-              <FiCode aria-hidden="true" />
-            </span>
           </div>
         </div>
 
