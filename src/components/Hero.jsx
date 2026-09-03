@@ -36,13 +36,15 @@ function Hero() {
               <FiArrowUpRight aria-hidden="true" />
             </a>
 
-            <span
-              className="redesign-button secondary-action disabled-action"
-              aria-disabled="true"
+            <a
+              href="/Rahul_Shukla_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="redesign-button secondary-action"
             >
               <FiDownload aria-hidden="true" />
-              Resume Coming Soon
-            </span>
+              View Resume
+            </a>
           </div>
 
           <div className="hero-socials" aria-label="Social profiles">
