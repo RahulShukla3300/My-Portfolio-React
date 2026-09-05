@@ -116,8 +116,9 @@ const projects = [
       "A task-management project for practising forms, dynamic list operations, and browser events.",
     highlights: "Forms • DOM manipulation • Events",
     technologies: ["HTML", "CSS", "JavaScript"],
+    liveDemo: `${pagesUrl}/To-Do%20List/index.html`,
     github: `${repositoryUrl}/tree/main/To-Do%20List`,
-    status: "In progress",
+    status: "completed",
   },
   {
     title: "Weather App",

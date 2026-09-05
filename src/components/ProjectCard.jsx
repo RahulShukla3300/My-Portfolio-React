@@ -12,7 +12,7 @@ function ProjectCard({
   github,
   status,
 }) {
-  const isInProgress = status === "In progress";
+  const isInProgress = status === "live";
 
   return (
     <article className="project-card">
@@ -65,7 +65,7 @@ function ProjectCard({
           ) : (
             <span className="project-link-disabled">
               <FiClock aria-hidden="true" />
-              In-rogress
+              Completed
             </span>
           )}
 
