@@ -37,7 +37,7 @@ function Hero() {
             </a>
 
             <a
-              href="/Rahul_Shukla_Resume.pdf"
+              href="/Rahul.Shukla.Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="redesign-button secondary-action"
