@@ -37,7 +37,7 @@ function Hero() {
             </a>
 
             <a
-              href="/Rahul.Shukla.Resume.pdf"
+              href="/Rahul_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="redesign-button secondary-action"
@@ -93,7 +93,7 @@ function Hero() {
             </span>
 
             <span>
-              <strong>2+</strong>
+              <strong>3+</strong>
               <small>Years Experience</small>
             </span>
           </div>
@@ -104,7 +104,7 @@ function Hero() {
             </span>
 
             <span>
-              <strong>Frontend</strong>
+              <strong>FrontEnd</strong>
               <small>Developer</small>
             </span>
           </div>
