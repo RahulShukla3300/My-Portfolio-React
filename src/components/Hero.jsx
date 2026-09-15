@@ -36,15 +36,14 @@ function Hero() {
               <FiArrowUpRight aria-hidden="true" />
             </a>
 
-            <a
-              href="/Rahul_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="redesign-button secondary-action"
+            <button
+              type="button"
+              disabled
+              className="redesign-button secondary-action disabled-action"
             >
               <FiDownload aria-hidden="true" />
               View Resume
-            </a>
+            </button>
           </div>
 
           <div className="hero-socials" aria-label="Social profiles">
@@ -93,7 +92,7 @@ function Hero() {
             </span>
 
             <span>
-              <strong>3+</strong>
+              <strong>2+</strong>
               <small>Years Experience</small>
             </span>
           </div>
