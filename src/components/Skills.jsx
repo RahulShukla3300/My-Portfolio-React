@@ -4,21 +4,27 @@ import {
   FaNodeJs,
   FaPhp,
   FaReact,
+  FaServer,
 } from "react-icons/fa"
 
 import {
   SiJavascript,
   SiMysql,
+  SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si"
 
 const skills = [
-  { name: "HTML", icon: FaHtml5 },
-  { name: "CSS", icon: FaCss3Alt },
-  { name: "JavaScript", icon: SiJavascript },
   { name: "React", icon: FaReact },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "REST API", icon: FaServer },
   { name: "Node.js", icon: FaNodeJs },
-  { name: "PHP", icon: FaPhp },
   { name: "MySQL", icon: SiMysql },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "CSS", icon: FaCss3Alt },
+  { name: "HTML5", icon: FaHtml5 },
+  { name: "PHP", icon: FaPhp },
 ]
 
 function Skills() {

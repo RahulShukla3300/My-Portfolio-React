@@ -25,9 +25,12 @@ function Hero() {
           <p className="hero-role">Frontend Developer</p>
 
           <p className="hero-description">
-            I build responsive and accessible web interfaces with React,
-            JavaScript, HTML, and CSS, focusing on performance and clean user
-            experiences.
+            <strong>Building responsive, API-driven web applications with React and
+            JavaScript. </strong>Frontend Developer creating
+            reusable UI components and ERP dashboards with React, TypeScript,
+            Redux Toolkit, and Tailwind CSS. I connect interfaces to RESTful
+            APIs and optimize performance through lazy loading and code
+            splitting.
           </p>
 
           <div className="hero-actions">
@@ -36,14 +39,15 @@ function Hero() {
               <FiArrowUpRight aria-hidden="true" />
             </a>
 
-            <button
-              type="button"
-              disabled
-              className="redesign-button secondary-action disabled-action"
+            <a
+              href="/Rahul_Shukla_Frontend_Developer_Resume.pdf"
+              className="redesign-button secondary-action"
+              target="_blank"
+              rel="noreferrer"
             >
               <FiDownload aria-hidden="true" />
               View Resume
-            </button>
+            </a>
           </div>
 
           <div className="hero-socials" aria-label="Social profiles">
