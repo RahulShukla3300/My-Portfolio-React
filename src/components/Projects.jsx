@@ -32,6 +32,7 @@ const projects = [
       "Calculates body mass index from height and weight and displays the corresponding weight category.",
     highlights: "Input validation • Calculations • Conditionals",
     technologies: ["HTML", "CSS", "JavaScript"],
+    image: `${rawImageUrl}/Passenger%20Counter%20App/assets/Habibganj-Railway-Station-19.jpg`,
     image: `${rawImageUrl}/bmi-calculator-screenshot.jpg`,
     liveDemo: `${pagesUrl}/BMI%20CALCULATOR/`,
     github: `${repositoryUrl}/tree/main/BMI%20CALCULATOR`,
