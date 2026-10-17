@@ -110,7 +110,7 @@ const projects = [
     status: "Completed",
   },
   {
-    title: "To-Do List",
+    title: "Passenger Counter App", category: "JavaScript Utility", description: "A simple passenger tracker that increments the current count and saves previous totals for quick reference.", highlights: "DOM updates • Click events • Saved entries", technologies: ["HTML", "CSS", "JavaScript"], liveDemo: `${pagesUrl}/Passenger%20Counter%20App/`, github: `${repositoryUrl}/tree/main/Passenger%20Counter%20App`, status: "Completed", }, { title: "To-Do List",
     category: "Productivity App",
     description:
       "A task-management project for practising forms, dynamic list operations, and browser events.",
@@ -203,7 +203,7 @@ function Projects() {
           </div>
 
           <p>
-            Explore ten meaningful projects from focused JavaScript exercises
+            Explore eleven meaningful projects from focused JavaScript exercises
             to this React portfolio. The showcase advances automatically every
             five seconds.
           </p>
